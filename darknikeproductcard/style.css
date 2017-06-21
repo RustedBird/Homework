@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo');
+@font-face {
+    font-family: 'museo_sans100';
+    src: url('fonts/museo-sans-100-594a1ffd69296-webfont.woff2') format('woff2'),
+    url('fonts/museo-sans-100-594a1ffd69296-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 html {
     height: 100%;
 }
@@ -67,13 +73,13 @@ body {
     padding-top: 55px;
 }
 .main__name {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'museo_sans100', sans-serif;
     color: #b2b6bc;
     font-size: 22px;
     margin-bottom: 0;
 }
 .main__description {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'museo_sans100', sans-serif;
     color: #86898f;
     font-size: 14px;
     margin: 10px 0 0 0;
@@ -94,7 +100,7 @@ body {
 }
 .main__b-text {
     color: #86898f;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'museo_sans100', sans-serif;
     font-size: 14px;
     margin: 8px;
 }
@@ -110,6 +116,6 @@ body {
     background: #2A3545;
     border: 1px solid #86898f;
     color: #86898f;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'museo_sans100', sans-serif;
     font-size: 14px;
 }
