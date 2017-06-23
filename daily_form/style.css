@@ -85,3 +85,7 @@ button {
     letter-spacing: -0.4px;
     line-height: 20px;
 }
+button:focus {
+    outline: none;
+    box-shadow: 0px 0px 2px 2px #BD1962;
+}
