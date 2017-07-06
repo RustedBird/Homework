@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@font-face {
+    font-family: 'misobold';
+    src: url('fonts/miso-bold-webfont.woff2') format('woff2'),
+    url('fonts/miso-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'misolight';
+    src: url('fonts/miso-light-webfont.woff2') format('woff2'),
+    url('fonts/miso-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background: #FDDE7E;
+    padding-top: 4%;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    height: 80%;
+    margin: 0 auto;
+}
+.cup {
+    background: white;
+    width: 32%;
+    height: 80%;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+.cup:nth-of-type(2) {
+    height: 90%;
+}
+p {
+    font-family: 'misobold', Arial, sans-serif;
+    font-size: 74px;
+    color: #02995B;
+    text-align: center;
+    margin: 0;
+}
+.cup img {
+    display: block;
+    margin: 0 auto;
+    padding-left: 5%;
+}
+.name {
+    font-family: 'misolight', Arial, sans-serif;
+    font-size: 54px;
+    font-weight: 100;
+    color: #333333;
+}
+.description {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 20px;
+    color: #333333;
+    letter-spacing: 0.9px;
+    line-height: 27px;
+}
