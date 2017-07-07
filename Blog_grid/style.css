@@ -67,3 +67,14 @@ main {
     bottom: 25px;
     left: 25px;
 }
+.loading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: #818181;
+    margin: 50px auto;
+    padding: 20px;
+}
+.loading img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
