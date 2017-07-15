@@ -132,6 +132,7 @@ main svg {
 .row {
     display: flex;
     height: 10vw;
+    min-height: 100px;
     width: 100%;
 }
 .row > div:first-of-type {
@@ -149,7 +150,7 @@ main svg {
     height: 100%;
 }
 .row p {
-    font-size: 2vw;
+    font-size: 30px;
     color: white;
     font-family: 'Lato', Arial, sans-serif;
     font-weight: bold;
@@ -158,7 +159,8 @@ main svg {
     letter-spacing: 0.1vw;
 }
 .pics {
-    margin: 160px 0;
+    margin: 160px auto;
+    min-width: 1072px;
 }
 .contact {
     display: inline-block;
