@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 @font-face {
     font-family: 'bebas_neuebold';
     src: url('fonts/bebasneue_bold-webfont.woff2') format('woff2'),
@@ -19,7 +20,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 
 body, html {
     margin: 0;
@@ -27,96 +28,43 @@ body, html {
 }
 main {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    margin: 15px;
+    position: relative;
 }
 .item {
+    overflow: hidden;
     width: 326px;
     height: 611px;
-    margin: 11px;
-    box-sizing: border-box;
-    padding: 35px 90px 0 90px;
     background: linear-gradient(to bottom, rgb(244,244,244) 50%,rgb(255,255,255) 50%);
     position: relative;
-    overflow: hidden;
-}
-.item:after {
-    content: '';
-    left: -87px;
-    top: 200px;
-    position: absolute;
-    z-index: 1;
-    display: block;
-    background: white;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-}
-.content_wrapper {
-    position: relative;
-    height: 100%;
     z-index: 2;
-}
-.content_wrapper:after {
-    content: '';
-    background: rgb(244,244,244);
-    width: 326px;
-    height: 60px;
-    margin-left: -90px;
-    position: absolute;
-    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .center {
     width: 370px;
     height: 691px;
 }
-.center:after {
+.item:after {
     content: '';
-    left: -65px;
-    top: 200px;
+    left: -87px;
+    top: 170px;
     position: absolute;
-    z-index: 1;
     display: block;
     background: white;
     width: 500px;
     height: 500px;
     border-radius: 50%;
 }
+.center:after {
+    top: 150px;
+    left: -65px;
+}
 .price {
-    text-align: center;
-}
-.price span {
-    display: inline-block;
-    font-family: 'bebas_neuethin', Arial, sans-serif;
-}
-.price span:nth-child(1) {
-    font-size: 25px;
-    vertical-align: top;
-    line-height: 41px
-}
-.price span:nth-child(2) {
-    font-size: 59px;
-}
-.price span:nth-child(3) {
-    font-size: 20px;
-}
-.title {
-    font-family: 'bebas_neueregular', Arial, sans-serif;
-    font-size: 27px;
-    text-align: center;
-    margin: 4px;
-}
-.icon {
-    font-size: 30px;
-    display: block;
-    text-align: center;
-    margin-top: 100px;
-}
-.description {
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    margin: 30px 0;
-}
-.foot {
 
 }
