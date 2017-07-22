@@ -231,6 +231,7 @@ header {
       @include hor-line (#222);
     }
     .witem-wrapper {
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       .work-item {

@@ -200,6 +200,7 @@ header {
       background: #222;
       margin: 60px auto; }
     .our_work .container .witem-wrapper {
+      margin: 0 auto;
       display: flex;
       justify-content: space-between; }
       .our_work .container .witem-wrapper .work-item {
