@@ -200,7 +200,8 @@ header {
       margin: 60px auto; }
     .our_work .container .witem-wrapper {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      overflow: hidden; }
       .our_work .container .witem-wrapper .work-item {
         width: 370px;
         height: 420px;
