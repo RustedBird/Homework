@@ -223,6 +223,7 @@ header {
   box-sizing: border-box;
   .container {
     @include cont;
+    overflow: hidden;
     .block-logo {
       @include bl-logo(#222);
     }
@@ -232,7 +233,6 @@ header {
     .witem-wrapper {
       display: flex;
       justify-content: space-between;
-      overflow: hidden;
       .work-item {
         width: 370px;
         height: 420px;
