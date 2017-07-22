@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:700');
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+@mixin bl-logo($color) {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  color: $color;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin hor-line($bg-color) {
+  width: 86px;
+  height: 2px;
+  background: $bg-color;
+  margin: 60px auto;
+}
+
+@mixin cont {
+  margin: 0 auto;
+  max-width: 1170px;
+  min-width: 750px;
+  position: relative;
+  height: 100%;
+}
+
+header {
+  background: url("images/header_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 678px;
+  height: 100vh;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.container {
+  @include cont;
+  .logo {
+    transition: transform linear 0.1s;
+    &:hover {
+      transform: scale(1.1) translate(0, -5px);
+    }
+  }
+  .header-menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0 20px;
+      transition: transform linear 0.1s;
+      &:hover {
+        transform: scale(1.1) translate(0, -5px);
+        border-bottom: 3px solid #01AAF4;
+      }
+    }
+  }
+  h1 {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 180px 0 0 0;
+  }
+  .line {
+    @include hor-line (#ffffff);
+  }
+  .head-text {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+  }
+  .head-btn {
+    width: 92px;
+    height: 92px;
+    position: absolute;
+    bottom: 40px;
+    left: 46%;
+    .circle {
+      width: 100%;
+      height: 100%;
+      border: 3px solid #7E929B;
+      border-radius: 50%;
+      position: relative;
+      .arrow {
+        display: block;
+        border: solid #7E929B;
+        border-width: 0 3px 3px 0;
+        padding: 10px;
+        position: absolute;
+        top: 30px;
+        right: 33px;
+        transform: rotate(45deg);
+      }
+    }
+    &:hover .circle .arrow {
+      animation: move 0.3s infinite;
+      animation-direction: alternate;
+    }
+  }
+}
+
+@keyframes move {
+  from {
+    top: 30px
+  }
+  to {
+    top: 40px
+  }
+}
+
+.our_services {
+  padding-top: 100px;
+  box-sizing: border-box;
+  height: 735px;
+  .container {
+    @include cont;
+    .block-logo {
+      @include bl-logo(#222222);
+    }
+    .line {
+      @include hor-line (#222222);
+    }
+    .svg-container {
+      height: 180px;
+      svg {
+        fill: #005494;
+        transition: fill linear 1s;
+        &:hover {
+          fill: red;
+        }
+      }
+    }
+    .service-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .service-item {
+        margin: 15px;
+        text-align: center;
+        font-family: 'Lato', Arial, sans-serif;
+        font-size: 24px;
+        color: #222222;
+        .item-text {
+          font-weight: 400;
+        }
+        .item-description {
+          font-weight: 300;
+          font-size: 16px;
+          padding: 0 50px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}
+.phone-block {
+  height: 500px;
+  background: url("images/phone-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  .container {
+    font-family: 'Lato', Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    min-width: 850px;
+    max-width: 1170px;
+    .phone-text {
+      font-size: 45px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .phone-description {
+      font-size: 22px;
+      font-weight: 300;
+      width: 500px;
+      margin: 10px 0 60px 0;
+    }
+    a {
+      width: 50px;
+      color: white;
+      transition: transform linear 0.2s;
+      &:hover {
+        transform: scale(1.3) translate(5px, 0);
+      }
+    }
+    img {
+      width: 257px;
+      height: 425px;
+      position: absolute;
+      right: 45px;
+      bottom: 0;
+    }
+  }
+}
+
+.our_work {
+  height: 950px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  .container {
+    @include cont;
+    .block-logo {
+      @include bl-logo(#222);
+    }
+    .line {
+      @include hor-line (#222);
+    }
+    .witem-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .work-item {
+        width: 370px;
+        height: 420px;
+        position: relative;
+        img {
+          position: absolute;
+          width: 370px;
+          top: 0;
+          left: 0;
+        }
+        .hover-item {
+          background: rgba(29, 29, 29, 0.7);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          visibility: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          p {
+            font-family: 'Lato', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: white;
+            text-transform: uppercase;
+            margin: 15px;
+          }
+        }
+        &:hover .hover-item {
+          visibility: visible;
+        }
+      }
+    }
+    .more {
+      display: block;
+      margin: 80px auto;
+      text-align: center;
+      width: 370px;
+      height: 60px;
+      border: 2px solid #222;
+      text-decoration: none;
+      color: #222;
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      padding-top: 10px;
+      &:hover {
+        animation: glare 0.8s;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+@keyframes glare {
+  0% {
+    background: white;
+    color: #222;
+  }
+  100% {
+    background: rgb(3, 74, 106);
+    color: #ffffff;
+  }
+}
+
+.get_in_touch {
+  height: 800px;
+  background: url("images/intchbg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  box-sizing: border-box;
+  .container {
+    @include cont;
+    .block-logo {
+      @include bl-logo(#fff);
+    }
+    .line {
+      @include hor-line(#fff);
+    }
+    .social_links {
+      display: block;
+      margin: 0 auto;
+      width: 225px;
+      height: 25px;
+      font-size: 0;
+      a {
+        margin: 0 10px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: url("images/social_icons.svg") no-repeat;
+        transition: transform ease-out 0.2s;
+        &:hover {
+          transform: scale(1.6);
+        }
+      }
+      .fb {
+        background-position: -45px 0;
+      }
+      .in {
+        background-position: -97px 0;
+      }
+      .v {
+        background-position: -146px 0;
+      }
+      .be {
+        background-position: -195px 0;
+      }
+    }
+    form {
+      margin: 50px auto 0;
+      width: 666px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+      input {
+        width: 300px;
+        height: 36px;
+        border: none;
+        background: none;
+        border-bottom: 2px solid #7e7e7e;
+        box-sizing: border-box;
+        padding-left: 15px;
+        color: #ffffff;
+        font-family: 'Lato', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        &:focus {
+          outline: none;
+        }
+      }
+      .message {
+        width: 666px;
+        margin-top: 150px;
+        height: 36px;
+      }
+      button {
+        width: 183px;
+        height: 60px;
+        background: none;
+        border: 3px solid white;
+        display: block;
+        margin: 80px auto;
+        text-align: center;
+        color: white;
+        font-family: 'Lato', Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        transition: color 0.5s, border 0.3s, background 0.3s;
+        &:active {
+          outline: none;
+        }
+        &:hover {
+          color: #000000;
+          border: none;
+          background: white;
+        }
+      }
+    }
+  }
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #676767;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #676767;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #676767;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #676767;
+}

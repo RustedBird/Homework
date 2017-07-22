@@ -8,6 +8,9 @@ html, body {
   margin: 0;
 }
 
+@keyframes rotate {
+  from {transform: rotate(0deg)} to {transform: rotate(3600deg)}
+}
 header {
   width: 1200px;
   margin: 0 auto;
@@ -109,6 +112,11 @@ main {
           z-index: 2;
           left: 15px;
           top: 15px;
+          transition: transform 1s linear;
+          &:hover {
+            animation: rotate
+            /*transform: rotatey(360deg);*/
+          }
         }
       }
     }
