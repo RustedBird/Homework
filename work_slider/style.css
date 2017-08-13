@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600");
+html, body {
+  margin: 0; }
+
+header {
+  padding-top: 15px; }
+  header .container {
+    width: 1140px;
+    margin: 0 auto; }
+    header .container p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center; }
+    header .container h1 {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 70px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 72px;
+      margin: 20px 0 55px 0;
+      position: relative; }
+    header .container svg:first-of-type {
+      position: absolute;
+      top: 160px;
+      left: 100px; }
+    header .container svg:last-of-type {
+      position: absolute;
+      top: 15px;
+      right: 345px; }
+
+main .container {
+  width: 1140px;
+  margin: 0 auto; }
+  main .container .slider {
+    width: 1220px; }
+    main .container .slider .slider-item {
+      width: 300px;
+      height: 260px;
+      box-sizing: border-box;
+      position: relative;
+      margin: 15px; }
+      main .container .slider .slider-item img {
+        width: 100%;
+        height: 100%;
+        position: absolute; }
+      main .container .slider .slider-item .hover-div {
+        visibility: hidden;
+        position: absolute;
+        background: rgba(27, 241, 173, 0.6);
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding: 20px; }
+        main .container .slider .slider-item .hover-div .item-name {
+          font-family: 'Poppins', sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 24px;
+          margin: 5px 0; }
+        main .container .slider .slider-item .hover-div .description {
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          font-weight: 600;
+          margin: 0px; }
+      main .container .slider .slider-item:hover .hover-div {
+        visibility: visible; }
+    main .container .slider .left-arrow {
+      width: 60px;
+      height: 60px;
+      background: url("images/left.png");
+      background-size: cover;
+      position: absolute;
+      z-index: 10;
+      top: calc(50% - 40px);
+      left: -65px;
+      cursor: pointer; }
+    main .container .slider .right-arrow {
+      width: 60px;
+      height: 60px;
+      background: url("images/next.png");
+      background-size: cover;
+      position: absolute;
+      z-index: 10;
+      top: calc(50% - 40px);
+      right: 15px;
+      cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

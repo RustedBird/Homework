@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+html, body {
+  margin: 0;
+}
+@mixin container {
+  width: 1140px;
+  margin: 0 auto;
+}
+header {
+  padding-top: 15px;
+  .container {
+    @include container;
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 70px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 72px;
+      margin: 20px 0 55px 0;
+      position: relative;
+    }
+    svg:first-of-type {
+      position: absolute;
+      top: 160px;
+      left: 100px;
+    }
+    svg:last-of-type {
+      position: absolute;
+      top: 15px;
+      right: 345px;
+    }
+  }
+}
+main {
+  .container {
+    @include container;
+    .slider {
+      width: 1220px;
+      .slider-item {
+        width: 300px;
+        height: 260px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 15px;
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+        }
+        .hover-div {
+          visibility: hidden;
+          position: absolute;
+          background: rgba(27, 241, 173, 0.6);
+          width: 100%;
+          height: 100%;
+          color: white;
+          text-transform: uppercase;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          box-sizing: border-box;
+          padding: 20px;
+          .item-name {
+              font-family: 'Poppins', sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+            line-height: 24px;
+            margin: 5px 0;
+          }
+          .description {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 0px;
+          }
+        }
+        &:hover .hover-div {
+          visibility: visible;
+        }
+      }
+      .left-arrow {
+        width: 60px;
+        height: 60px;
+        background: url("images/left.png");
+        background-size: cover;
+        position: absolute;
+        z-index: 10;
+        top: calc(50% - 40px);
+        left: -65px;
+        cursor: pointer;
+      }
+      .right-arrow {
+        width: 60px;
+        height: 60px;
+        background: url("images/next.png");
+        background-size: cover;
+        position: absolute;
+        z-index: 10;
+        top: calc(50% - 40px);
+        right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+body{
+    margin: 0;
+    padding-bottom: 10px;
+}
+main {
+    width: 1200px;
+    min-height: calc(100vh - 230px);
+    margin: 0 auto;
+    display: flex;
+}
+.tasks {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Lobster', cursive;
+}
+button {
+    margin: 10px;
+    height: 20px;
+    width: 60px;
+    color: white;
+    background: orange;
+    border: 1.5px solid orange;
+    border-radius: 5px;
+    transition: color 0.3s, background 0.3s;
+}
+button:hover {
+    cursor: pointer;
+    color: orange;
+    background: white;
+}
+button:active {
+    color: white;
+}
+.add {
+    position: absolute;
+    top: 32px;
+    right: 80px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    background: orange;
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+.item {
+    margin: 5px;
+    padding-left: 150px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text {
+    padding: 10px;
+    width: 600px;
+    height: 120px;
+    background: #cccccc;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Marck Script', cursive;
+    font-size: 20px;
+    border: 2px solid #333333;
+    border-radius: 20px;
+}
+p {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 22px;
+
+}
